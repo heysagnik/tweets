@@ -108,7 +108,7 @@ function App()
     return (
         <Box>
             <Head>
-                <title>Tweetsc.com - Create beautiful tweets</title>
+                <title>Obuluyo.com - Create beautiful tweets</title>
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
             </Head>
 
@@ -120,7 +120,7 @@ function App()
             </Flex>
 
             <footer>
-                <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with 💜 by <a href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'>Sagnik</a>.</Text>
+                <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with 💜 by <a href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'>Sagnik</a> & Funded by <a href="https://www.twitter.com/BurkSahin" rel="noreferrer" target='_blank'>Burak</a>.</Text>
             </footer>
       </Box>
     )
