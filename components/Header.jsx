@@ -13,7 +13,7 @@ const Header = ({bringTweet}) => {
 				<a href=""><Image src='/logo.png' alt='logo' /></a>
 		    </Box>
 			<Box pt='20' px='8'>
-	            <Text fontSize={title_size} className='title i'>Tweetsc.com</Text>
+	            <Text fontSize={title_size} className='title i'>Obuluyo.com</Text>
 	        </Box>
 		
 			
