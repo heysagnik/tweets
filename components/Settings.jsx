@@ -59,7 +59,7 @@ const Settings = ({props}) => {
                 
                     <Flex align="baseline" mr='0.5rem'>
                         <Tooltip label="Show Source" placement="top">
-                        <IconButton size="md" id="show_source" isChecked={props.showSource} onChange={()=>props.setShowSource(!props.showSource)} >
+                        <IconButton size="md" id="show_source" isChecked={props.showSource} onClick={()=>props.setShowSource(!props.showSource)} >
                             <IoTelescope/>
                         </IconButton>
                         </Tooltip>
@@ -68,7 +68,7 @@ const Settings = ({props}) => {
                 
                     <Flex align="baseline" mr='0.5rem'>
                         <Tooltip label="Show time" placement="top">
-                        <IconButton size="md" id="show_time" isChecked={props.showTime} onChange={()=>props.setShowTime(!props.showTime)}>
+                        <IconButton size="md" id="show_time" isChecked={props.showTime} onClick={()=>props.setShowTime(!props.showTime)}>
                             <IoTime />
                         </IconButton>
                         </Tooltip>
@@ -77,7 +77,7 @@ const Settings = ({props}) => {
                 
                     <Flex align="baseline" mr='0.5rem'>
                         <Tooltip label="Show Metrics" placement="top">
-                        <IconButton size="md" id="show_metrics" isChecked={props.showMetrics} onChange={()=>props.setShowMetrics(!props.showMetrics)} >
+                        <IconButton size="md" id="show_metrics" isChecked={props.showMetrics} onClick={()=>props.setShowMetrics(!props.showMetrics)} >
                             <IoTrendingUp />
                         </IconButton>
                         </Tooltip>
@@ -108,7 +108,7 @@ const Settings = ({props}) => {
             </Box>
 
             <Box my='10'>
-                <Button borderRadius='3px' p='9px' as={Button} rightIcon={< DownloadIcon/>}>
+                <Button borderRadius='3px' p='9px' as={Button} rightIcon={< DownloadIcon/>} onClick={()=>props.convert('png')}>
                     Download
                 </Button>
                 
