@@ -14,7 +14,7 @@ const Header = ({bringTweet}) => {
 		    </Box>
 			<Box pt='20' px='8'>
 	            <Text fontSize={title_size} 
-				bgGradient='linear(to-l, #7928CA, #FF0080)'
+				bgGradient='linear(to-l, #09009f, #00ff95)'
                 bgClip='text'
                 fontWeight='extrabold'
 				align="center">Paste & Capture </Text>
