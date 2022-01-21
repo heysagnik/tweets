@@ -1,6 +1,6 @@
 
 import {format} from 'date-fns'
-import { Box, Text, Image } from "@chakra-ui/react"
+import { Box, Text, Image, Avatar } from "@chakra-ui/react"
 
 const Tweet = ({tweet, showTime, showMetrics, showSource, showImage}) => {
 
@@ -62,7 +62,7 @@ const Tweet = ({tweet, showTime, showMetrics, showSource, showImage}) => {
 		<Box p={pad} rounded="sm" >
 			<div className='tweet'>
 	            <div className="user">
-	            	<Image src={dp} boxSize={img_size} borderRadius="full" />
+	            	<Avatar src={dp} boxSize={img_size}  />
 	            	<div className="names">
 	            		<Text fontSize={font_size} className='name'>
             				<span className="bold n">{name}</span>

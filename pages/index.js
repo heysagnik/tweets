@@ -8,7 +8,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Settings from '../components/Settings'
 
-import {Text, Box, Flex} from "@chakra-ui/react"
+import {Text, Box, Flex, Avatar, Link} from "@chakra-ui/react"
 
 
 function App() 
@@ -108,8 +108,8 @@ function App()
     return (
         <Box>
             <Head>
-                <title>Obuluyo.com - Create beautiful tweets</title>
-                <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+                <title>Capture your beautiful tweets</title>
+                <link rel="icon" type="image/png+xml" href="/logo.png" />
             </Head>
 
             <Header bringTweet={bringTweet}/>
@@ -120,9 +120,11 @@ function App()
             </Flex>
 
             <footer>
-                <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with 💜 by <a href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'>Sagnik</a> & Funded by <a href="https://www.twitter.com/BurkSahin" rel="noreferrer" target='_blank'>Burak</a>.</Text>
+                <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with 💗 by <Avatar src="/logo.png" size='sm'/> <Link href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'isExternal> Sagnik</Link>.</Text>
             </footer>
+            
       </Box>
+     
     )
 
 

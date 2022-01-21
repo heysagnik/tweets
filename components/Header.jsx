@@ -1,4 +1,4 @@
-import {Text, Input, Box, InputGroup, InputRightElement, Button ,Tooltip,Image,IconButton } from '@chakra-ui/react'
+import {Text, Input, Box, InputGroup, InputRightElement, Tooltip,Image,IconButton } from '@chakra-ui/react'
 import{IoArrowForwardOutline,IoClipboardOutline} from 'react-icons/io5'
 
 const Header = ({bringTweet}) => {
@@ -10,10 +10,14 @@ const Header = ({bringTweet}) => {
 		<>  
 		<Box px={5} py={5} >
 		    <Box className='logo'>
-				<a href=""><Image src='/logo.png' alt='logo' /></a>
+				<a href=""><Tooltip hasArrow label="Tweetscom" bg='gray.300'color='black' placement='right-start'><Image src='/logo.png' alt='logo' /></Tooltip></a>
 		    </Box>
 			<Box pt='20' px='8'>
-	            <Text fontSize={title_size} className='title i'>Obuluyo.com</Text>
+	            <Text fontSize={title_size} 
+				bgGradient='linear(to-l, #7928CA, #FF0080)'
+                bgClip='text'
+                fontWeight='extrabold'
+				align="center">Paste & Capture </Text>
 	        </Box>
 		
 			

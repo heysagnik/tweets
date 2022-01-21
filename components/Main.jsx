@@ -15,7 +15,7 @@ const Main = ({scale, hint, loading, error, tweetData, bg, showTime, showMetrics
     	return (
     		<Box m="0 auto" className='non-tweet i' py='2rem' flexDirection='column'>
     		    <Box>
-    		        <Image src='https://www.getillustrations.com/packs/azure-illustrations/scenes/_1x/social%20media%20_%20profile,%20account,%20user,%20picture,%20photo,%20like,%20comment,%20social%20network_sm.png' alt='logo' />    
+    		        
                 </Box>
     		    <Text className='i' p='4' color='gray.700' textAlign='center'>Capture Tweets in Beautiful frames.</Text>
     		</Box>
