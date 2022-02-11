@@ -1,6 +1,6 @@
 <table>
 <tr >
-    <th><img src="" width="50px" height="50px" style="display:inline-block; "/></th>
+    <th><img src="https://github.com/devgossips/tweets/blob/master/public/logo.png?raw=true" width="50px" height="50px" style="display:inline-block; "/></th>
     <th><h1>&ensp;Tweetsc.com</h1></th>
 </tr>
 </table>
