@@ -11,5 +11,6 @@
  Capture your **tweets** in beautiful frames !!
 ![Screenshot](https://api.microlink.io/?url=https://tweetsc-com.vercel.app&screenshot=true&meta=false&embed=screenshot.url&waitForTimeout=1500&type=jpeg&overlay.browser=dark&overlay.background=linear-gradient%28225deg%2C+%23FF057C+0%25%2C+%238D0B93+50%25%2C+%23321575+100%25%29)
 
-
+## Credit :
+<b>@drkprince</b>'s [Tweet-to- image Project](https://github.com/drkPrince/tweet-to-image)
 
