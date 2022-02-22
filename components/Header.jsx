@@ -10,7 +10,7 @@ const Header = ({bringTweet}) => {
 		<>  
 		<Box px={5} py={5} >
 		    <Box className='logo'>
-				<a href=""><Tooltip hasArrow label="Tweetscom" bg='gray.300'color='black' placement='right-start'><Image src='/logo.png' alt='logo' /></Tooltip></a>
+				<a href=""><Tooltip hasArrow label="Tweetscom" bg='gray.300'color='black' placement='right-start'><Image src='/logo.png' alt='logo' loading /></Tooltip></a>
 		    </Box>
 			<Box pt='20' px='8'>
 	            <Text fontSize={title_size} 
