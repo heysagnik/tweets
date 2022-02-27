@@ -24,7 +24,7 @@ const Header = ({bringTweet}) => {
 	        <Box className='i' my="12" align="center">
 	          <form onSubmit={bringTweet} autoComplete='off'>
 	                <InputGroup maxW='90vw'>
-	                    <Input name='tweetURL' placeholder=" Paste a Twitter post link " variant='filled' isRequired/>
+	                    <Input name='tweetURL' placeholder=" Paste a Twitter post link " variant='filled' isRequired type="url"/>
 	                    <InputRightElement>
 						    <IconButton size="sm">
 							     <IoClipboardOutline fontSize={font_size_small} color="blue.500" />
