@@ -170,5 +170,49 @@ p {
 	z-index: 10;
 }
 
+.heart {
+  background-color: #f44336;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(45deg);
+  animation: animateHeart 1.2s infinite;
+  
+  &::before, &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+  }
+  &::before {
+    left: -25px;
+  }
+  
+  &::after {
+    top: -25px;
+  }
+}
 
+@keyframes animateHeart {
+  0% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  5% {
+    transform: rotate(45deg) scale(0.9);
+  }
+  10% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  15% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.8);
+  }
+}
 
