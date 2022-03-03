@@ -44,19 +44,19 @@ a:hover {
   position: relative;
 
   &::before {
-    content: "";
-    position: absolute;
-    bottom: 60px;
-    left: 60px;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(
-      to bottom left,
-      rgba(249, 180, 70, 1) 15%,
-      rgba(234, 47, 152, 0.8)
-    );
-    border-radius: 60px;
-    border: 12px solid  #ebf5fc;
+     content: "";
+     position: absolute;
+     bottom: 60px;
+     left: 60px;
+     width: 150px;
+     height: 150px;
+     background: linear-gradient(
+       to bottom left,
+         rgba(249, 180, 70, 1) 15%,
+         rgba(234, 47, 152, 0.8)
+       );
+      border-radius: 60px;
+      border: 12px solid  #ebf5fc;
   }
 }
 	
