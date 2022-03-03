@@ -84,7 +84,7 @@ const Tweet = ({tweet, showTime, showMetrics, showSource, showImage}) => {
             		</Text>
 	            </div>
 	            {showMetrics && <div className='metrics'>
-                     <HStack>
+                     <HStack isInline>
                 	<Text fontSize={font_size_small}>
                 		<span className='bold'>{modLikes}</span> 
                                 <div className='seclikes'> 
