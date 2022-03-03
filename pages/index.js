@@ -120,7 +120,15 @@ function App()
             </Flex>
 
             <footer>
-                <HStack inline><Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with <div class="container2"><div class="heart"></div></div> by <Avatar src="https://pbs.twimg.com/profile_images/1495961774239088640/UbNLolqO_400x400.jpg" size='sm'/> <Link href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'isExternal> Sagnik</Link>.</Text></HStack>
+                <HStack inline>
+                <Box className='i'>
+                 <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with </Text></Box>
+                 <Box class="container2"><Box class="heart"></Box></Box>
+                 <Box><Text px='1rem' className='i' color='gray.500' fontSize='lg'> by </Text></Box>
+                 <Box><Avatar src="https://pbs.twimg.com/profile_images/1495961774239088640/UbNLolqO_400x400.jpg" size='sm'/></Box>
+                 <Box><Text px='1rem' className='i' color='gray.500' fontSize='lg'>
+                 <Link href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'isExternal> Sagnik</Link>.</Text>
+                 </Box></HStack>
             </footer>
             
       </Box>
