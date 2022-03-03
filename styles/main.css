@@ -169,6 +169,53 @@ p {
 	min-width: 100%;
 	z-index: 10;
 }
+.container2 {
+  position: relative;
+  animation: .8s beat infinite;
+}
+.heart {
+  position: relative;
+  background-color: red;
+  display: inline-block;
+  height: 12px;
+  top:0;
+  left:0;
+  transform: rotate(-45deg);
+  width:12px;
+}
+  
+.heart:before, .heart:after {
+  content:"";
+  background-color: red;
+  border-radius:50%;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  width: 12px;
+  }
+  
+.heart:before {
+  top:-6px;
+  left:0;}
+  
+.heart:after {
+  left:6px;
+  top:0;}
 
-
-
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

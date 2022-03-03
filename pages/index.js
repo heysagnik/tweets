@@ -8,7 +8,7 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Settings from '../components/Settings'
 
-import {Text, Box, Flex, Avatar, Link} from "@chakra-ui/react"
+import {Text, Box, Flex, Avatar, Link,HStack} from "@chakra-ui/react"
 
 
 function App() 
@@ -120,7 +120,13 @@ function App()
             </Flex>
 
             <footer>
-                <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with 💗 by <Avatar src="https://pbs.twimg.com/profile_images/1495961774239088640/UbNLolqO_400x400.jpg" size='sm'/> <Link href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'isExternal> Sagnik</Link>.</Text>
+                <HStack inline align='center'>
+                <Box className='i'>
+                 <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with </Text></Box>
+                 <Box class="container2"><Box class="heart"></Box></Box>
+                 <Box><Text px='1rem' className='i' color='gray.500' fontSize='lg'> by 
+                 <Link href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'isExternal> Sagnik</Link>.</Text>
+                 </Box></HStack>
             </footer>
             
       </Box>
