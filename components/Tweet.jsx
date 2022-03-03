@@ -1,6 +1,6 @@
 
 import {format} from 'date-fns'
-import { Box, Text, Image, Avatar } from "@chakra-ui/react"
+import { Box, Text, Image, Avatar,Stack, HStack, VStack } from "@chakra-ui/react"
 
 const Tweet = ({tweet, showTime, showMetrics, showSource, showImage}) => {
 
@@ -84,6 +84,7 @@ const Tweet = ({tweet, showTime, showMetrics, showSource, showImage}) => {
             		</Text>
 	            </div>
 	            {showMetrics && <div className='metrics'>
+                     <HStack>
                 	<Text fontSize={font_size_small}>
                 		<span className='bold'>{modLikes}</span> 
                                 <div className='seclikes'> 
@@ -93,6 +94,7 @@ const Tweet = ({tweet, showTime, showMetrics, showSource, showImage}) => {
                                 </div>  
                                 <span className='bold'>{modRetweets}</span> <span className='sec'> Retweets</span>
                 	</Text>
+                     </HStack>
 	            </div>}
 	        </div>
 	  	</Box>
