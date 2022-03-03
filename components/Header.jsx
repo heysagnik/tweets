@@ -1,4 +1,4 @@
-import {Text, Input, Box, InputGroup, InputRightElement, Tooltip,Image,IconButton } from '@chakra-ui/react'
+import {Text, Input, Box, InputGroup, InputRightElement, Tooltip,Image,IconButton, Button } from '@chakra-ui/react'
 import{IoArrowForwardOutline,IoClipboardOutline} from 'react-icons/io5'
 
 const Header = ({bringTweet}) => {
@@ -9,9 +9,9 @@ const Header = ({bringTweet}) => {
 	return (
 		<>  
 		<Box px={5} py={5} >
-		    <Box className='logo'>
+		    <Button className='logo' borderColor='black.500' alignItems="center">
 				<Tooltip hasArrow label="Tweetscom" bg='gray.300'color='black' placement='right-start'><Image src='/logo.png' alt='logo' loading /></Tooltip>
-		    </Box>
+		    </Button>
 			<Box pt='20' px='8'>
 	            <Text fontSize={title_size} 
 				bgGradient='linear(to-l, #09009f, #00ff95)'
