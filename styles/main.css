@@ -36,14 +36,28 @@ a:hover {
 }
 
 .logo{
-	max-width: 50%;
-	max-height: 50%;
-	width: 60px; 
-	height: 60px; 
-	float: left;
-	position:absolute;
-    top:5px;
-    left: 100px;
+  margin: 100px 100px 0 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom left, #007fe8 15%, #00cdfc);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(
+      to bottom left,
+      rgba(249, 180, 70, 1) 15%,
+      rgba(234, 47, 152, 0.8)
+    );
+    border-radius: 60px;
+    border: 12px solid  #ebf5fc;
+  }
 }
 	
 
