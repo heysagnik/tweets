@@ -171,48 +171,48 @@ p {
 }
 
 .heart {
-  background-color: #f44336;
-  width: 50px;
-  height: 50px;
   position: relative;
-  transform: rotate(45deg);
-  animation: animateHeart 1.2s infinite;
-  
-  &::before, &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    position: absolute;
-    border-radius: 50%;
-  }
-  &::before {
-    left: -25px;
-  }
-  
-  &::after {
-    top: -25px;
-  }
+  background-color: red;
+  display: inline-block;
+  height: 60px;
+  top:0;
+  left:0;
+  transform: rotate(-45deg);
+  width:60px;
 }
+  
+.heart:before, .heart:after {
+  content:"";
+  background-color: red;
+  border-radius:50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  width: 60px;
+  }
+  
+.heart:before {
+  top:-30px;
+  left:0;}
+  
+.heart:after {
+  left:30px;
+  top:0;}
 
-@keyframes animateHeart {
+@keyframes beat {
   0% {
-    transform: rotate(45deg) scale(0.8);
+    transform: scale(1);
   }
-  5% {
-    transform: rotate(45deg) scale(0.9);
+  25% {
+    transform: scale(1.1);
   }
-  10% {
-    transform: rotate(45deg) scale(0.8);
+  40% {
+    transform: scale(1);
   }
-  15% {
-    transform: rotate(45deg) scale(1);
-  }
-  50% {
-    transform: rotate(45deg) scale(0.8);
+  60% {
+    transform: scale(1.1);
   }
   100% {
-    transform: rotate(45deg) scale(0.8);
+    transform: scale(1);
   }
 }
-
