@@ -39,7 +39,7 @@ const Main = ({scale, hint, loading, error, tweetData, bg, showTime, showMetrics
 
 	return (
         <Box m="0 auto">
-            <Box className='con' style={{background : bg}} minW={pic_size} maxW={pic_size} rounded="md" px={padX} py={padY} ref={tweetRef}>
+            <Box className='con' style={{background : bg}} minW={pic_size} maxW={pic_size}  px={padX} py={padY} ref={tweetRef}>
                 <div className='container' style={{transform: `scale(${scale})`}} >
                     { 
                         tweetData && <Tweet
