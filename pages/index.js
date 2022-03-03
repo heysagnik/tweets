@@ -120,7 +120,7 @@ function App()
             </Flex>
 
             <footer>
-                <HStack inline>
+                <HStack inline alignItems='center'>
                 <Box className='i'>
                  <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with </Text></Box>
                  <Box class="container2"><Box class="heart"></Box></Box>
