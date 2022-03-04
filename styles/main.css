@@ -75,10 +75,10 @@ footer {
 	float: inline-start;
 	font-family: 'source sans pro', 'helvetica neue', 'helvetica', arial, sans-serif;
 	font-size: 70px;
-    line-height: 1;
-    text-align: center;
+        line-height: 1;
+        text-align: center;
 	text-align: center;
-    font-weight: 900;
+        font-weight: 900;
 	animation: move 4s linear infinite;
 	background-image: linear-gradient(to right, #77f, #33d0ff, #25ffbb, #33d0ff, #77f);
 	background-size: 200% auto;
