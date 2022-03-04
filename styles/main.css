@@ -36,9 +36,9 @@ a:hover {
 }
 
 .logo {
-  margin: 100px 100px 0 0;
-  width: 150px;
-  height: 150px;
+  margin: 40px 40px 0 0;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: linear-gradient(to bottom left, #007fe8 15%, #00cdfc);
   position: relative;
@@ -46,16 +46,16 @@ a:hover {
   &::before {
      content: "";
      position: absolute;
-     bottom: 60px;
-     left: 60px;
-     width: 150px;
-     height: 150px;
+     bottom: 20px;
+     left: 20px;
+     width: 60px;
+     height: 60px;
      background: linear-gradient(
        to bottom left,
          rgba(249, 180, 70, 1) 15%,
          rgba(234, 47, 152, 0.8)
        );
-      border-radius: 60px;
+      border-radius: 10px;
       border: 12px solid  #ebf5fc;
   }
 }
