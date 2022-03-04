@@ -120,14 +120,14 @@ function App()
             </Flex>
 
             <footer>
-                <center>
+                <Box>
                 <HStack inline>
                 <Box className='i'>
                  <Text px='1rem' className='i' color='gray.500' fontSize='lg'>Made with </Text></Box>
                  <Box class="container2"><Box class="heart"></Box></Box>
                  <Box><Text px='1rem' className='i' color='gray.500' fontSize='lg'> by 
                  <Link href="https://www.twitter.com/heysagnik" rel="noreferrer" target='_blank'isExternal> Sagnik</Link>.</Text>
-                 </Box></HStack></center>
+                 </Box></HStack></Box>
             </footer>
             
       </Box>
