@@ -9,7 +9,7 @@ const Header = ({bringTweet}) => {
 	return (
 		<>  
 		<Box px={5} py={5} >
-		    <Box class="logo"></Box>
+		    <div class="logo"></div>
 			<Box pt='20' px='8'>
 	            <Text fontSize={title_size} 
 				bgGradient='linear(to-l, #09009f, #00ff95)'
