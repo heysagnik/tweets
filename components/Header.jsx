@@ -26,7 +26,7 @@ const Header = ({bringTweet}) => {
 	                <InputGroup maxW='90vw'>
 	                    <Input name='tweetURL' placeholder=" Paste a Twitter post link " variant='filled' isRequired type="url" focusBorderColor='gray.400'/>
 	                    <InputRightElement>
-						    <IconButton size="sm" _hover={{ bg:'gray.400'}}>
+						    <IconButton size="sm" _active={{ bordercolor:'gray.400'}}>
 							     <IoClipboardOutline fontSize={font_size_small} color="blue.500" />
 							</IconButton>
 							<span>&nbsp;</span>
