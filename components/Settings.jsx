@@ -59,7 +59,12 @@ const Settings = ({props}) => {
                 
                     <Flex align="baseline" mr='0.5rem'>
                         <Tooltip label="Show Source" placement="top">
-                        <IconButton size="md" id="show_source" isChecked={props.showSource} onClick={()=>props.setShowSource(!props.showSource)} >
+                        <IconButton size="md" id="show_source" isChecked={props.showSource} onClick={()=>props.setShowSource(!props.showSource)} _focus={{
+								   ring:"1px",
+								   ringColor: 'gray.400',
+								   ringOffsetColor: 'gray.400',
+								   ringOffset: '1px',
+								}}>
                             <IoTelescope/>
                         </IconButton>
                         </Tooltip>
@@ -68,7 +73,13 @@ const Settings = ({props}) => {
                 
                     <Flex align="baseline" mr='0.5rem'>
                         <Tooltip label="Show time" placement="top">
-                        <IconButton size="md" id="show_time" isChecked={props.showTime} onClick={()=>props.setShowTime(!props.showTime)}>
+                        <IconButton size="md" id="show_time" isChecked={props.showTime} onClick={()=>props.setShowTime(!props.showTime)}
+                                _focus={{
+								   ring:"1px",
+								   ringColor: 'gray.400',
+								   ringOffsetColor: 'gray.400',
+								   ringOffset: '1px',
+								}}>
                             <IoTime />
                         </IconButton>
                         </Tooltip>
@@ -77,7 +88,13 @@ const Settings = ({props}) => {
                 
                     <Flex align="baseline" mr='0.5rem'>
                         <Tooltip label="Show Metrics" placement="top">
-                        <IconButton size="md" id="show_metrics" isChecked={props.showMetrics} onClick={()=>props.setShowMetrics(!props.showMetrics)} >
+                        <IconButton size="md" id="show_metrics" isChecked={props.showMetrics} onClick={()=>props.setShowMetrics(!props.showMetrics)} 
+                           _focus={{
+                              ring:"1px",
+                              ringColor: 'gray.400',
+                              ringOffsetColor: 'gray.400',
+                              ringOffset: '1px',
+                              }}>
                             <IoTrendingUp />
                         </IconButton>
                         </Tooltip>
@@ -99,7 +116,7 @@ const Settings = ({props}) => {
                     <div>Size</div>
                     <div>{props.scale}</div>
                 </FormLabel>
-                <Slider name='scale' min={0.5} max={1} step={0.1} aria-label="scale the tweet" colorScheme="blue" value={props.scale} onChange={(val) => props.setScale(val)}>
+                <Slider name='scale' min={0.5} max={1} step={0.1} aria-label="scale the tweet" colorScheme="gray" value={props.scale} onChange={(val) => props.setScale(val)}>
                     <SliderTrack>
                         <SliderFilledTrack />
                     </SliderTrack>
@@ -108,7 +125,13 @@ const Settings = ({props}) => {
             </Box>
 
             <Box my='10'>
-                <Button borderRadius='3px' p='9px' as={Button} rightIcon={< DownloadIcon/>} onClick={()=>props.convert('png')}>
+                <Button borderRadius='3px' p='9px' as={Button} rightIcon={< DownloadIcon/>} onClick={()=>props.convert('png')}
+                _focus={{
+                    ring:"1px",
+                    ringColor: 'gray.400',
+                    ringOffsetColor: 'gray.400',
+                    ringOffset: '1px',
+                 }} >
                     Download
                 </Button>
                 

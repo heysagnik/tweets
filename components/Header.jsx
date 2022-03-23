@@ -1,4 +1,4 @@
-import {Text, Input, Box, InputGroup, InputRightElement, Tooltip,Image,IconButton, Button } from '@chakra-ui/react'
+import {Text, Input, Box, InputGroup, InputRightElement, Tooltip,Image,IconButton,chakra } from '@chakra-ui/react'
 import{IoArrowForwardOutline,IoClipboardOutline} from 'react-icons/io5'
 
 const Header = ({bringTweet}) => {
@@ -22,23 +22,30 @@ const Header = ({bringTweet}) => {
 		
 			
 	        <Box className='i' my="12" align="center">
-	          <form onSubmit={bringTweet} autoComplete='off'>
+	          <chakra.form onSubmit={bringTweet} autoComplete='off'>
 	                <InputGroup maxW='90vw'>
 	                    <Input name='tweetURL' placeholder=" Paste a Twitter post link " variant='filled' isRequired type="url" focusBorderColor='gray.400'/>
 	                    <InputRightElement>
-						    <IconButton size="sm">
-							     <IoClipboardOutline fontSize={font_size_small} color="blue.500" />
+						    <IconButton size="sm"_focus={{
+								   ring:"1px",
+								   ringColor: 'gray.400',
+								   ringOffsetColor: 'gray.400',
+								   ringOffset: '1px',
+								}}>
+							     <IoClipboardOutline fontSize={font_size_small} color='blue.500' />
 							</IconButton>
 							<span>&nbsp;</span>
-	                    	<IconButton type='submit'size="sm" >
-	                    		<IoArrowForwardOutline fontSize={font_size_small} color="blue.500" 
-								_active={{
-								  borderColor: '#bec3c9',
-								}}/>
+	                    	<IconButton type='submit'size="sm" _focus={{
+								   ring:"1px",
+								   ringColor: 'gray.400',
+								   ringOffsetColor: 'gray.400',
+								   ringOffset: '1px',
+								}}>
+	                    		<IoArrowForwardOutline fontSize={font_size_small} color='blue.500'/>
 	                    	</IconButton>
 	                    </InputRightElement>	
 	                </InputGroup>
-	          </form>
+	          </chakra.form>
 	        </Box>
 		</Box>
 		</>
