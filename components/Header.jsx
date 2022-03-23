@@ -30,8 +30,11 @@ const Header = ({bringTweet}) => {
 							     <IoClipboardOutline fontSize={font_size_small} color="blue.500" />
 							</IconButton>
 							<span>&nbsp;</span>
-	                    	<IconButton type='submit'size="sm">
-	                    		<IoArrowForwardOutline fontSize={font_size_small} color="blue.500" />
+	                    	<IconButton type='submit'size="sm" >
+	                    		<IoArrowForwardOutline fontSize={font_size_small} color="blue.500" 
+								_active={{
+								  borderColor: '#bec3c9',
+								}}/>
 	                    	</IconButton>
 	                    </InputRightElement>	
 	                </InputGroup>

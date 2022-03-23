@@ -14,11 +14,8 @@ const Main = ({scale, hint, loading, error, tweetData, bg, showTime, showMetrics
     if(hint){
     	return (
     		<Box m="0 auto" className='non-tweet i' py='2rem' flexDirection='column'>
-    		    
-    		        <Image src ="https://raw.githubusercontent.com/devgossips/tweets/master/public/0849ee129095293.616a65da7742c.png" loading borderRadius='20' w={pic_size}
-        h={pic_size}/>
-                
-    		 <Text className='i' p='4' color='gray.700' textAlign='center'>Capture Tweets in Beautiful frames.</Text>
+    		    <Image src ="./banner.png" loading borderRadius='20'/>
+            <Text className='i' p='4' color='gray.700' textAlign='center'>Capture Tweets in Beautiful frames.</Text>
     		</Box>
     	)
     }
